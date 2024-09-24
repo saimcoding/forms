@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+        form {
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="checkbox"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label {
+            flex: 1;
+            margin-bottom: 0;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form</div>
+        <div class="subtitle">
+            Of course, all submitted information is kept in the strictest confidence. <br>
+            You always retain control of your information with D.W. Simpson & Co.<br>
+            Our services are always at no cost to you.
+        </div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State/Province:</label>
+                <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" name="zip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-home">Phone (H):</label>
+                <input type="tel" id="phone-home" name="phone_home" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fax">Fax:</label>
+                <input type="text" id="fax" name="fax">
+            </div>
+
+            <div class="form-group">
+                <label for="phone-work">Phone (W):</label>
+                <input type="tel" id="phone-work" name="phone_work">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company Name (optional):</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="desired-region">Desired Region:</label>
+                <select id="desired-region" name="desired_region">
+                    <option value="other">Other</option>
+                </select>
+                <input type="text" name="other_region">
+            </div>
+
+            <div class="form-group">
+                <label for="designations">Professional Designations Earned:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="designation" value="college_student"> College Student</label>
+                    <label><input type="checkbox" name="designation" value="actuarial_student"> Actuarial Student</label>
+                    <label><input type="checkbox" name="designation" value="acas"> ACAS</label>
+                    <label><input type="checkbox" name="designation" value="fcas"> FCAS</label>
+                    <label><input type="checkbox" name="designation" value="asa"> ASA</label>
+                    <label><input type="checkbox" name="designation" value="fsa"> FSA</label>
+                    <label><input type="checkbox" name="designation" value="ea"> EA</label>
+                    <label><input type="checkbox" name="designation" value="cfa"> CFA</label>
+                    <label><input type="checkbox" name="designation" value="mba"> MBA</label>
+                    <label><input type="checkbox" name="designation" value="maaa"> MAAA</label>
+                    <label><input type="checkbox" name="designation" value="fia"> FIA</label>
+                    <label><input type="checkbox" name="designation" value="fcia"> FCIA</label>
+                    <label><input type="checkbox" name="designation" value="fiaa"> FIAA</label>
+                    <label><input type="checkbox" name="designation" value="financial_engineer"> Financial Engineer</label>
+                    <label><input type="checkbox" name="designation" value="ms"> M.S.</label>
+                    <label><input type="checkbox" name="designation" value="phd"> Ph.D.</label>
+                    <label><input type="checkbox" name="designation" value="data_mining"> Data Mining</label>
+                    <label><input type="checkbox" name="designation" value="quant"> Quant</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="other-designations">Other Designations:</label>
+                <input type="text" id="other-designations" name="other_designations">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <h2><a href="./index.html">Home Page</a></h2>
+</body>
+</html>
